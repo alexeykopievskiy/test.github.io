@@ -1,0 +1,29 @@
+.b-icon{
+  display: block;
+  float: left;
+  margin-right: 20px;
+}
+.b-icon--time{
+  @include sprite($time);
+}
+.b-icon--check{
+  @include sprite($check);
+}
+.b-icon--hand{
+  @include sprite($hand);
+}
+.b-icon--man{
+  @include sprite($man);
+}
+.b-icon--tw{
+  @include sprite($tw);
+}
+.b-icon--fb{
+  @include sprite($fb);
+}
+.b-icon--gp{
+  @include sprite($gp);
+}
+.b-icon--vk{
+  @include sprite($vk);
+}

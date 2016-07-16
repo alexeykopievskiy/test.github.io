@@ -1,0 +1,171 @@
+extends ../layouts/master
+
+block title
+    +pageTitle("Index Page")
+
+block content
+    header.b-header
+      div.b-header__top-line.b-container
+        div.b-header__logo.b-pull--left
+          a(href="")
+            img(src="assets/img/logo.png", alt="").b-header__img
+        nav.b-header__nav.b-pull--left
+          ul.b-header__ul
+            li.b-nav__item
+              a(href="") Сбережения
+            li.b-nav__item
+              a(href="") Займы
+            li.b-nav__item
+              a(href="") Компания
+            li.b-nav__item
+              a(href="") Контакты
+        a(href="#").b-header__login.b-pull--right
+          i.b-icon.b-icon--man
+          | Войти
+      div.b-header__center-block
+        h1.b-align--center.b-text--white Приумножаем сбережения
+          br
+          | по ставке
+          span.b-background--blue 20.9%
+        div.b-header__center-pluses
+          div.b-block
+            p.b-pull--left
+              i.b-icon.b-icon--time
+              | Ежемесячная выплата процентов
+            p.b-pull--right
+              i.b-icon.b-icon--check
+              | Обязательное страхование всех кладов
+          div.b-block
+            a.b-btn.b-btn--yellow.b-block--center.b-btn--large(href="#")
+              | Открыть депозитный счет
+            a.b-lnk.b-lnk--underline-solid(href="#")
+              | Тарифы по вкладам
+              i.b-icon.b-icon--hand
+
+    section.b-section
+      div.b-section--jumbotron.b-section__about.b-container--main
+        div.b-col-9.b-section--border
+          h2.b-text--dark Займы
+          p.b-text--gray Оставьте заявку на получение займа, мы рассмотрим ее в течении 15 минут в 10 крупнейших банках региона и после получения одоброения пригласим Вас в офис для оформления и получения займа
+          a.b-btn.b-btn--blue.b-btn--medium(href="#") Рассчитать займ
+        div.b-col-3.b-pull--right.b-section__tariffs
+          h3.b-text--dark Тариф "Домашний"
+          img(src="assets/img/img1.png", alt="")
+          p.b-text--gray Сумма займа
+            span.b-text--yellow 10 000 - 30 000 руб.
+          p.b-text--gray Срок займа
+            span.b-text--yellow 4 - 52 нед.
+
+    section.b-section--large.b-secton--gray
+      div.b-section
+        h2.b-section__opinions--header.b-text--dark Отзывы клиентов
+        div.b-container--main.b-section__opinions
+          div.b-section__opinion
+            div.b-section__img.b-pull--left.b-col-3
+              img(src="assets/img/img2.png", alt="")
+            div.b-section__text-body.b-pull--right.b-col-9
+              p.b-section__text.b-text--gray-light
+                | Я, Чураев А.В., являюсь клиентом «СБЕРФОНДА» на протяжении 9 месяцев. Хочется выразить благодарность и восхищение коллективу и организаторам-руководителям «СБЕРФОНДА» за высокий уровень культуры обслуживания клиентов и, конечно же, выгодный процент! Уверен, что Вас ожидает финансовый успех и удовлетворение от работы с людьми. Удачи Вам!
+              span.b-section__author
+                | Чураев А.В.
+          div.b-section__opinion
+            div.b-section__img.b-pull--left.b-col-3
+              img(src="assets/img/img2.png", alt="")
+            div.b-section__text-body.b-pull--right.b-col-9
+              p.b-section__text.b-text--gray-light
+                | Я, Чураев А.В., являюсь клиентом «СБЕРФОНДА» на протяжении 9 месяцев. Хочется выразить благодарность и восхищение коллективу и организаторам-руководителям «СБЕРФОНДА» за высокий уровень культуры обслуживания клиентов и, конечно же, выгодный процент! Уверен, что Вас ожидает финансовый успех и удовлетворение от работы с людьми. Удачи Вам!
+              span.b-section__author
+                | Чураев А.В.
+
+    section.b-section
+      div.b-container.b-section__news
+        div.tabs
+          input#tab1(type='radio', name='tabs', checked='')
+          label(for='tab1', title='Новости') Новости
+          input#tab2(type='radio', name='tabs')
+          label(for='tab2', title='Акции') Акции
+          section#content1.section
+            div.b-col-4
+              img(src="assets/img/img3.png", alt="")
+              span.b-date 04.05.2016
+              p.b-section__text Сберфонд откроет свои двери для жителей Москвы
+            div.b-col-4
+              img(src="assets/img/img4.png", alt="")
+              span.b-date 04.05.2016
+              p.b-section__text Сберфонд откроет свои двери для жителей Москвы
+            div.b-col-4
+              img(src="assets/img/img5.png", alt="")
+              span.b-date 04.05.2016
+              p.b-section__text Сберфонд откроет свои двери для жителей Москвы
+          section#content2.section
+            p
+              | &Zcy;&dcy;&iecy;&scy;&softcy; &rcy;&acy;&zcy;&mcy;&iecy;&shchcy;&acy;&iecy;&tcy;&iecy; &lcy;&yucy;&bcy;&ocy;&iecy; &scy;&ocy;&dcy;&iecy;&rcy;&zhcy;&acy;&ncy;&icy;&iecy;....
+
+
+    footer.b-footer
+      div.b-container
+        div.b-footer__logo-block
+          div.b-footer__logo
+            img(src="assets/img/logo-footer.png", alt="")
+          div.b-footer__line.b-text--gray-light
+            span 2012 - 2016
+            span Все права защищены.
+          div.b-footer__line.b-text--gray-light
+            span КПК "СБЕРФОНД"
+            span ИНН 215458725
+          div.b-footer__line
+            ul.b-footer__social
+              li.b-footer__social-item.b-social--vk
+                i.b-icon.b-icon--vk
+                a(href="#")
+              li.b-footer__social-item.b-social--tw
+                i.b-icon.b-icon--tw
+                a(href="#")
+              li.b-footer__social-item.b-social--fb
+                i.b-icon.b-icon--fb
+                a(href="#")
+              li.b-footer__social-item.b-social--gp
+                i.b-icon.b-icon--gp
+                a(href="#")
+        div.b-footer__nav-block
+          div.b-footer__nav.b-footer__holdings
+            h6.b-footer__header.b-text--dark Вклады
+            ul.b-footer__list
+              li.b-footer__list-item
+                a(href="#") Раньте
+              li.b-footer__list-item
+                a(href="#") Инвесторам
+              li.b-footer__list-item
+                a(href="#") Пенсионная
+          div.b-footer__nav.b-footer__loans
+            h6.b-footer__header.b-text--dark Займы
+            ul.b-footer__list
+              li.b-footer__list-item
+                a(href="#") "Домашний"
+              li.b-footer__list-item
+                a(href="#") "Домашний+"
+          div.b-footer__nav.b-footer__company
+            h6.b-footer__header.b-text--dark Компания
+            ul.b-footer__list
+              li.b-footer__list-item
+                a(href="#") Акции и конкурсы
+              li.b-footer__list-item
+                a(href="#") Отзывы
+              li.b-footer__list-item
+                a(href="#") Документы
+              li.b-footer__list-item
+                a(href="#") Вопросы и ответы
+              li.b-footer__list-item
+                a(href="#") Статьи
+              li.b-footer__list-item
+                a(href="#") Информация
+        div.b-footer__contacts-block
+          h6.b-footer__header.b-text--dark Контакты
+          div.b-footer__line.b-text--gray-light
+            span.b-text--dark +7 (812) 605-00-75
+            span Для жителей Санкт-Петербурга
+          div.b-footer__line.b-text--gray-light
+            span.b-text--dark 8 800 775 63 08
+            span Бесплатный звонок по России
+          div.b-footer__line
+            a.b-btn.b-btn--yellow.b-btn--outline-yellow(href="#").b-btn--medium Заказать звонок

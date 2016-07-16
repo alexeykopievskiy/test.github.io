@@ -1,0 +1,48 @@
+.b-btn{
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+
+}
+
+.b-btn--yellow{
+  background: $yellow;
+
+  &:hover{
+    background: $yellow-hover;
+  }
+}
+
+.b-btn--large{
+  font-size: 20px;
+  padding: 16px;
+  border-radius: 50px;
+  width: 340px;
+}
+
+.b-btn--blue{
+  background: $blue;
+
+  &:hover{
+    background: $blue-hover;
+  }
+}
+
+.b-btn--medium{
+  font-size: 17px;
+  padding: 16px;
+  border-radius: 50px;
+  width: 225px;
+}
+
+.b-btn--outline-yellow{
+  background: none;
+  color: $yellow;
+  border: 2px solid $yellow;
+
+  &:hover{
+    border-color: $yellow-hover;
+    background: none;
+    color: $yellow-hover;
+  }
+}

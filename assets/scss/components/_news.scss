@@ -1,0 +1,109 @@
+/* Базовый контейнер табов */
+.tabs {
+  min-width: 320px;
+  max-width: 1020px;
+  padding: 0px;
+  margin: 0 auto;
+  text-align: center;
+
+  @include clearfix;
+}
+/* стили секций с содержанием */
+section.section {
+  display: none;
+  padding: 15px;
+  background: #fff;
+  margin-top: 30px;
+
+  @include clearfix;
+  //border: 1px solid #ddd;
+}
+.tabs input {
+  display: none;
+}
+
+.tabs label[for="tab1"]{
+  margin-right: 4px;
+}
+/* стили вкладок (табов) */
+.tabs label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 10px 15px 14px;
+  font-size: 22px;
+  font-weight: 300;
+  text-align: center;
+  color: $dark;
+  border-bottom: 2px solid $gray-lighter;
+  //background: #f1f1f1;
+  border-radius: 3px 3px 0 0;
+}
+/* шрифт-иконки от Font Awesome в формате Unicode */
+.tabs label:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+/* изменения стиля заголовков вкладок при наведении */
+.tabs label:hover {
+  //color: #888;
+  cursor: pointer;
+}
+/* стили для активной вкладки */
+.tabs input:checked + label {
+  color: #555;
+  border-bottom: 5px solid $blue;
+  /*border: 1px solid #ddd;
+  border-top: 1px solid #009933;
+  border-bottom: 1px solid #fff;*/
+  background: #fff;
+  font-weight: 400;
+  padding: 10px 15px 10px;
+}
+/* активация секций с помощью переключателя :checked */
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+  display: block;
+}
+/* медиа запросы для различных типов носителей */
+@media screen and (max-width: 680px) {
+  .tabs label {
+    font-size: 0;
+  }
+
+  .tabs label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .tabs label {
+    padding: 15px;
+  }
+}
+
+.b-section__news{
+  margin-top: 130px;
+}
+
+.b-col-4{
+  text-align: left;
+}
+
+.b-date{
+  color: $gray-date;
+  text-align: left;
+  display: block;
+  margin-top: 10px;
+}
+
+.b-section__text{
+  text-align: left;
+  color: $gray-light;
+  //padding: 0px 15px;
+  font-size: 16px;
+  margin-top: 5px;
+  line-height: 1.4em;
+}

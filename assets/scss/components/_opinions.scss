@@ -1,0 +1,81 @@
+.b-secton--gray{
+  background: $gray-lighter;
+}
+
+.b-section--large{
+  margin-top: 60px;
+}
+
+.b-section__opinions--header{
+  text-align: center;
+  margin-bottom: 25px;
+  padding-top: 55px;
+}
+
+.b-section__opinion{
+  padding-top: 15px;
+  margin: 0px auto 0;
+  width: 720px!important;
+  padding-bottom: 55px;
+
+  @include clearfix;
+
+}
+
+.b-section__img{
+  width: 20%;
+}
+
+.b-section__text-body{
+  width: 80%;
+}
+
+.b-section__text{
+  line-height: 1.6em;
+  margin-top: 5px;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.b-section__author{
+  font-weight: 600;
+}
+
+.slick-prev{
+  @include sprite($arr-left);
+
+  left: -125px;
+  top: 75px;
+
+  &:before{
+    content: '';
+  }
+
+  &:hover,
+  &:visited,
+  &:focus{
+    @include sprite($arr-left);
+  }
+}
+
+.slick-next{
+  @include sprite($arr-right);
+
+  right: -180px;
+  top: 75px;
+
+  &:before{
+    content: '';
+  }
+
+  &:hover,
+  &:visited,
+  &:focus{
+    @include sprite($arr-right);
+  }
+}
+
+.slick-slider{
+  width: 720px;
+  margin: -15px auto;
+}

@@ -1,0 +1,130 @@
+.b-footer__logo-block,
+.b-footer__nav-block,
+.b-footer__contacts-block{
+  float: left;
+}
+
+.b-footer__nav-block > div{
+  display: inline-block;
+}
+
+.b-footer__logo-block{
+  width: 230px;
+}
+
+.b-footer{
+  border-top: 2px solid $gray-lightest;
+  margin-top: 50px;
+  padding-top: 40px;
+
+  @include clearfix;
+}
+
+.b-footer__line{
+
+  margin-top: 30px;
+  font-size: 15px;
+  line-height: 1.5em;
+
+  span{
+    display: block;
+  }
+}
+
+.b-footer__social{
+  padding: 0;
+
+  @include clearfix;
+}
+
+.b-footer__social-item{
+  float: left;
+  list-style: none;
+
+  i{
+    margin-right: 8px;
+  }
+}
+
+.b-footer__nav-block{
+
+  @include clearfix;
+
+  > div{
+    float: left;
+  }
+}
+
+.b-footer__nav{
+
+}
+
+.b-footer__header{
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.b-footer__list{
+  li{
+    list-style: none;
+    font-size: 15px;
+    margin-bottom: 13px;
+    color: $gray-light;
+
+    a{
+      color: $gray-light;
+      text-decoration: none;
+
+      &:focus,
+      &:visited,
+      &:visited{
+        color: $gray-light;
+      }
+
+      &:hover{
+        color: $gray-light;
+      }
+    }
+  }
+}
+
+.b-footer__holdings{
+  width: 165px;
+
+  h6{
+    padding-left: 35px;
+  }
+
+  .b-footer__list{
+    padding-left: 35px;
+  }
+}
+
+.b-footer__loans{
+
+  width: 160px;
+
+  h6{
+    padding-left: 40px;
+  }
+}
+
+.b-footer__company{
+
+  width: 240px;
+
+  h6{
+    padding-left: 40px;
+  }
+
+}
+
+.b-footer__contacts-block{
+
+  a.b-btn{
+    text-decoration: none;
+  }
+}
